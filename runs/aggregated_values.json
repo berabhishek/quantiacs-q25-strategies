@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-06-13T23:33:10.097411",
+  "strategies": {
+    "ensemble": {
+      "Sharpe Ratio": 0.65,
+      "CAGR": 0.185,
+      "Max Drawdown": -0.42,
+      "Calmar Ratio": 0.44,
+      "Return": 0.42,
+      "Volatility": 0.28,
+      "Sortino Ratio": 0.92,
+      "Profit Factor": 1.08,
+      "Exposures": 0.92,
+      "Avg Turnover": 0.08
+    },
+    "momentum": {
+      "Sharpe Ratio": 0.58,
+      "CAGR": 0.165,
+      "Max Drawdown": -0.48,
+      "Calmar Ratio": 0.34,
+      "Return": 0.38,
+      "Volatility": 0.31,
+      "Sortino Ratio": 0.82,
+      "Profit Factor": 1.05,
+      "Exposures": 0.9,
+      "Avg Turnover": 0.1
+    },
+    "mean_reversion": {
+      "Sharpe Ratio": 0.42,
+      "CAGR": 0.095,
+      "Max Drawdown": -0.55,
+      "Calmar Ratio": 0.17,
+      "Return": 0.22,
+      "Volatility": 0.35,
+      "Sortino Ratio": 0.58,
+      "Profit Factor": 1.02,
+      "Exposures": 0.75,
+      "Avg Turnover": 0.15
+    },
+    "low_volatility": {
+      "Sharpe Ratio": 0.51,
+      "CAGR": 0.125,
+      "Max Drawdown": -0.38,
+      "Calmar Ratio": 0.33,
+      "Return": 0.28,
+      "Volatility": 0.22,
+      "Sortino Ratio": 0.71,
+      "Profit Factor": 1.06,
+      "Exposures": 0.85,
+      "Avg Turnover": 0.12
+    },
+    "momentum_low_volatility": {
+      "Sharpe Ratio": 0.61,
+      "CAGR": 0.152,
+      "Max Drawdown": -0.4,
+      "Calmar Ratio": 0.38,
+      "Return": 0.35,
+      "Volatility": 0.26,
+      "Sortino Ratio": 0.88,
+      "Profit Factor": 1.07,
+      "Exposures": 0.88,
+      "Avg Turnover": 0.09
+    },
+    "cross_sectional_momentum": {
+      "Sharpe Ratio": 0.53,
+      "CAGR": 0.138,
+      "Max Drawdown": -0.45,
+      "Calmar Ratio": 0.31,
+      "Return": 0.31,
+      "Volatility": 0.29,
+      "Sortino Ratio": 0.75,
+      "Profit Factor": 1.04,
+      "Exposures": 0.82,
+      "Avg Turnover": 0.11
+    }
+  },
+  "summary": {
+    "total_strategies": 6,
+    "successful_strategies": 6,
+    "failed_strategies": 0,
+    "average_sharpe_ratio": 0.5499999999999999,
+    "average_cagr": 0.14333333333333334,
+    "average_max_drawdown": -0.4466666666666667,
+    "best_sharpe_ratio": {
+      "strategy": "ensemble",
+      "value": 0.65
+    },
+    "best_cagr": {
+      "strategy": "ensemble",
+      "value": 0.185
+    }
+  }
+}
