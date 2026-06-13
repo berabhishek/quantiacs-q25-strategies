@@ -1,0 +1,13 @@
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Local environments
+conda/
+.venv/
+venv/
+
+# Notebook outputs
+*.nbconvert.ipynb
+

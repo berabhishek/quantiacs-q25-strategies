@@ -1,0 +1,685 @@
+[
+  {
+    "name": "MA 20/120 trend",
+    "category": "Trend Following",
+    "hypothesis": "Large crypto assets exhibit slow behavioral and flow-driven trends after sustained repricing.",
+    "why_persist": "Reflexive investor flows, delayed fundamental repricing, and benchmark under/overweight adjustments do not complete in one day.",
+    "participants": "Retail trend chasers, systematic CTA-like crypto products, token treasuries, and benchmark allocators.",
+    "stronger_when": "Broad risk-on conditions, persistent BTC uptrends, and expanding participation.",
+    "weaker_when": "Sharp deleveraging, range-bound chop, and exchange/liquidity shocks.",
+    "rules": "Entry: asset 20-day SMA > 120-day SMA. Exit: asset 20-day SMA <= 120-day SMA. Equal-weight active liquid assets.",
+    "test_metrics": {
+      "strategy": "MA 20/120 trend",
+      "category": "Trend Following",
+      "split": "test_2024_2025",
+      "CAGR": 0.21995375498579972,
+      "Sharpe": 0.6321692788857161,
+      "Sortino": 0.8693888147633687,
+      "Max Drawdown": -0.4565899953810715,
+      "Profit Factor": 1.1017073331254805,
+      "Win Rate": 0.46785225718194257,
+      "Average Trade": 0.022312006073059287,
+      "Number of Trades": 16.659920634920635,
+      "Exposure": 0.9233926128590971,
+      "Total Return": 0.48869227181039343
+    },
+    "best_regime": "bull",
+    "worst_regime": "sideways",
+    "sensitivity": [
+      {
+        "slow": 60,
+        "CAGR": 0.12650378735223056,
+        "Sharpe": 0.4931831289657594,
+        "Max Drawdown": -0.4846456810956604,
+        "Trades": 29.12420634920635
+      },
+      {
+        "slow": 90,
+        "CAGR": 0.1717013383983439,
+        "Sharpe": 0.564220387852287,
+        "Max Drawdown": -0.5000299650191267,
+        "Trades": 19.076190476190476
+      },
+      {
+        "slow": 120,
+        "CAGR": 0.21995375498579972,
+        "Sharpe": 0.6321692788857161,
+        "Max Drawdown": -0.4565899953810715,
+        "Trades": 16.659920634920635
+      },
+      {
+        "slow": 150,
+        "CAGR": 0.08517424154686504,
+        "Sharpe": 0.4344374059596935,
+        "Max Drawdown": -0.5689775402230184,
+        "Trades": 16.187301587301583
+      },
+      {
+        "slow": 180,
+        "CAGR": 0.2115793647097921,
+        "Sharpe": 0.6187237391969711,
+        "Max Drawdown": -0.5001805333144753,
+        "Trades": 14.388888888888888
+      },
+      {
+        "slow": 240,
+        "CAGR": 0.15168554173134097,
+        "Sharpe": 0.5352818161980232,
+        "Max Drawdown": -0.48845197962432985,
+        "Trades": 13.335714285714285
+      }
+    ]
+  },
+  {
+    "name": "Donchian breakout 55",
+    "category": "Trend Following",
+    "hypothesis": "New multi-month highs in crypto attract momentum capital and forced underweight buying.",
+    "why_persist": "Crypto markets are fragmented and narrative-driven, so price discovery can continue after breakouts.",
+    "participants": "Momentum traders, discretionary breakout buyers, and short sellers forced to cover.",
+    "stronger_when": "Fresh highs with broad market confirmation.",
+    "weaker_when": "False breakouts during low-liquidity sideways markets.",
+    "rules": "Entry: close above prior 55-day high. Exit: close below prior 55-day low. Equal-weight active liquid assets.",
+    "test_metrics": {
+      "strategy": "Donchian breakout 55",
+      "category": "Trend Following",
+      "split": "test_2024_2025",
+      "CAGR": -0.04324537030636422,
+      "Sharpe": 0.22548247484499429,
+      "Sortino": 0.3096627225362186,
+      "Max Drawdown": -0.6829884135220718,
+      "Profit Factor": 1.0333814154721475,
+      "Win Rate": 0.49794801641586867,
+      "Average Trade": 0.008027969072197653,
+      "Number of Trades": 16.724603174603175,
+      "Exposure": 0.9726402188782489,
+      "Total Return": -0.08467597371103364
+    },
+    "best_regime": "bull",
+    "worst_regime": "bear",
+    "sensitivity": [
+      {
+        "lookback": 20,
+        "CAGR": -0.02896559588845582,
+        "Sharpe": 0.2648033833354708,
+        "Max Drawdown": -0.6534557252319604,
+        "Trades": 45.513492063492066
+      },
+      {
+        "lookback": 40,
+        "CAGR": -0.13659930878807713,
+        "Sharpe": 0.08739543770199186,
+        "Max Drawdown": -0.7105911555599149,
+        "Trades": 24.043650793650794
+      },
+      {
+        "lookback": 55,
+        "CAGR": -0.04324537030636422,
+        "Sharpe": 0.22548247484499429,
+        "Max Drawdown": -0.6829884135220718,
+        "Trades": 16.724603174603175
+      },
+      {
+        "lookback": 70,
+        "CAGR": -0.04407235164906609,
+        "Sharpe": 0.22616250138542582,
+        "Max Drawdown": -0.6734972153387594,
+        "Trades": 14.157539682539683
+      },
+      {
+        "lookback": 90,
+        "CAGR": 0.026538224547158595,
+        "Sharpe": 0.33301300518778437,
+        "Max Drawdown": -0.6079135240512015,
+        "Trades": 12.31031746031746
+      },
+      {
+        "lookback": 120,
+        "CAGR": 0.1836220199317089,
+        "Sharpe": 0.5812887408326057,
+        "Max Drawdown": -0.4642537292151455,
+        "Trades": 9.991666666666667
+      }
+    ]
+  },
+  {
+    "name": "TSMOM 90",
+    "category": "Trend Following",
+    "hypothesis": "Assets with positive medium-term own returns continue to drift as crypto repricing is gradual.",
+    "why_persist": "Narratives, listings, and capital inflows tend to diffuse across venues and investor groups over weeks.",
+    "participants": "Retail momentum buyers, market makers hedging inventory, and funds rotating into winners.",
+    "stronger_when": "Bull regimes and post-consolidation breakouts.",
+    "weaker_when": "Bear markets with violent mean reversion.",
+    "rules": "Entry: 90-day total return > 0. Exit: 90-day total return <= 0. Equal-weight active liquid assets.",
+    "test_metrics": {
+      "strategy": "TSMOM 90",
+      "category": "Trend Following",
+      "split": "test_2024_2025",
+      "CAGR": -0.059989021909815254,
+      "Sharpe": 0.1763536984569516,
+      "Sortino": 0.23399930277660716,
+      "Max Drawdown": -0.6537217386075218,
+      "Profit Factor": 1.026725453168371,
+      "Win Rate": 0.46785225718194257,
+      "Average Trade": 0.0014508120462374695,
+      "Number of Trades": 68.90595238095237,
+      "Exposure": 0.9370725034199726,
+      "Total Return": -0.11645418892699677
+    },
+    "best_regime": "bull",
+    "worst_regime": "sideways",
+    "sensitivity": [
+      {
+        "lookback": 30,
+        "CAGR": -0.07171879909369783,
+        "Sharpe": 0.1983202465233703,
+        "Max Drawdown": -0.707205158343126,
+        "Trades": 124.79246031746032
+      },
+      {
+        "lookback": 60,
+        "CAGR": 0.008457082503384727,
+        "Sharpe": 0.3324200320365179,
+        "Max Drawdown": -0.591850546440835,
+        "Trades": 84.25873015873016
+      },
+      {
+        "lookback": 90,
+        "CAGR": -0.059989021909815254,
+        "Sharpe": 0.1763536984569516,
+        "Max Drawdown": -0.6537217386075218,
+        "Trades": 68.90595238095237
+      },
+      {
+        "lookback": 120,
+        "CAGR": 0.00751409844434292,
+        "Sharpe": 0.31003689971634524,
+        "Max Drawdown": -0.4890424433773708,
+        "Trades": 52.54642857142857
+      },
+      {
+        "lookback": 180,
+        "CAGR": 0.1479565348238916,
+        "Sharpe": 0.5307355026334427,
+        "Max Drawdown": -0.4772628073973997,
+        "Trades": 38.70515873015873
+      },
+      {
+        "lookback": 240,
+        "CAGR": 0.10293259340123373,
+        "Sharpe": 0.465774923510795,
+        "Max Drawdown": -0.49290771686834156,
+        "Trades": 28.26111111111111
+      }
+    ]
+  },
+  {
+    "name": "XSMOM top 10%",
+    "category": "Cross-Sectional Momentum",
+    "hypothesis": "Within crypto, recent winners keep attracting capital relative to laggards.",
+    "why_persist": "Attention, exchange listings, and ecosystem narratives concentrate flows into leaders before diffusing.",
+    "participants": "Narrative traders, relative-value funds, and liquidity providers following volume migration.",
+    "stronger_when": "Altcoin bull phases and sector-led markets.",
+    "weaker_when": "Market-wide deleveraging where correlations go to one.",
+    "rules": "Entry: rank liquid assets by 90-day return and buy top 10%. Exit: falls out of top 10%. Equal-weight selected assets.",
+    "test_metrics": {
+      "strategy": "XSMOM top 10%",
+      "category": "Cross-Sectional Momentum",
+      "split": "test_2024_2025",
+      "CAGR": 0.20339276831091535,
+      "Sharpe": 0.6311768352391536,
+      "Sortino": 1.0717997798374994,
+      "Max Drawdown": -0.6039215444002719,
+      "Profit Factor": 1.0981277098787092,
+      "Win Rate": 0.49247606019151846,
+      "Average Trade": 0.007050421657800169,
+      "Number of Trades": 75.0,
+      "Exposure": 1.0,
+      "Total Return": 0.44852123531474564
+    },
+    "best_regime": "bull",
+    "worst_regime": "sideways",
+    "sensitivity": [
+      {
+        "top_quantile": 0.05,
+        "CAGR": 0.20339276831091535,
+        "Sharpe": 0.6311768352391536,
+        "Max Drawdown": -0.6039215444002719,
+        "Trades": 75.0
+      },
+      {
+        "top_quantile": 0.1,
+        "CAGR": 0.20339276831091535,
+        "Sharpe": 0.6311768352391536,
+        "Max Drawdown": -0.6039215444002719,
+        "Trades": 75.0
+      },
+      {
+        "top_quantile": 0.2,
+        "CAGR": 0.30255073406594124,
+        "Sharpe": 0.7214291183637738,
+        "Max Drawdown": -0.6205176393627795,
+        "Trades": 64.0
+      }
+    ]
+  },
+  {
+    "name": "Low volatility carry",
+    "category": "Volatility Regimes",
+    "hypothesis": "Lower realized-volatility crypto assets may have better forward risk-adjusted returns than distressed high-volatility names.",
+    "why_persist": "High volatility often reflects adverse selection, poor liquidity, or crash risk; calmer assets are more institutionally holdable.",
+    "participants": "Levered traders exiting distressed names and long-only allocators preferring stable majors.",
+    "stronger_when": "Sideways or recovering markets.",
+    "weaker_when": "Speculative melt-ups where high-beta assets dominate.",
+    "rules": "Entry: 30-day realized volatility in bottom 20% of liquid universe. Exit: leaves bottom 20%. Equal-weight selected assets.",
+    "test_metrics": {
+      "strategy": "Low volatility carry",
+      "category": "Volatility Regimes",
+      "split": "test_2024_2025",
+      "CAGR": 0.21403810540665447,
+      "Sharpe": 0.6825277443596707,
+      "Sortino": 0.9877250131660067,
+      "Max Drawdown": -0.3173976157525661,
+      "Profit Factor": 1.1040381493262044,
+      "Win Rate": 0.518467852257182,
+      "Average Trade": 0.007764583129643359,
+      "Number of Trades": 35.5,
+      "Exposure": 1.0,
+      "Total Return": 0.474279899473419
+    },
+    "best_regime": "bull",
+    "worst_regime": "sideways",
+    "sensitivity": [
+      {
+        "lookback": 15,
+        "CAGR": 0.1217170336205684,
+        "Sharpe": 0.4897942178300046,
+        "Max Drawdown": -0.37805204350366095,
+        "Trades": 65.5
+      },
+      {
+        "lookback": 20,
+        "CAGR": 0.23179826633768386,
+        "Sharpe": 0.7229756817361351,
+        "Max Drawdown": -0.29256173296217314,
+        "Trades": 43.5
+      },
+      {
+        "lookback": 30,
+        "CAGR": 0.21403810540665447,
+        "Sharpe": 0.6825277443596707,
+        "Max Drawdown": -0.3173976157525661,
+        "Trades": 35.5
+      },
+      {
+        "lookback": 45,
+        "CAGR": 0.2686609320514841,
+        "Sharpe": 0.7908445237410723,
+        "Max Drawdown": -0.2883667401294243,
+        "Trades": 29.0
+      },
+      {
+        "lookback": 60,
+        "CAGR": 0.19964009186280873,
+        "Sharpe": 0.6545931405113077,
+        "Max Drawdown": -0.3151839655119093,
+        "Trades": 23.5
+      },
+      {
+        "lookback": 90,
+        "CAGR": 0.6060652376074331,
+        "Sharpe": 1.0934509393875185,
+        "Max Drawdown": -0.27572740562153986,
+        "Trades": 12.5
+      }
+    ]
+  },
+  {
+    "name": "TSMOM 90 + low-vol filter",
+    "category": "Volatility Regimes",
+    "hypothesis": "Momentum is more robust when it avoids the noisiest high-volatility assets.",
+    "why_persist": "Volatility filtering reduces exposure to forced-liquidation rebounds and unstable microstructure.",
+    "participants": "Momentum traders chasing liquid leaders versus distressed speculators in high-vol names.",
+    "stronger_when": "Orderly uptrends with moderate realized volatility.",
+    "weaker_when": "Early bull reversals led by high-beta laggards.",
+    "rules": "Entry: 90-day return > 0 and 30-day realized-vol rank <= 60%. Exit: either condition fails.",
+    "test_metrics": {
+      "strategy": "TSMOM 90 + low-vol filter",
+      "category": "Volatility Regimes",
+      "split": "test_2024_2025",
+      "CAGR": 0.3419228266446581,
+      "Sharpe": 0.8426782202489387,
+      "Sortino": 1.1187111482735475,
+      "Max Drawdown": -0.38562956432961604,
+      "Profit Factor": 1.1433879149035164,
+      "Win Rate": 0.4719562243502052,
+      "Average Trade": 0.006041181290157074,
+      "Number of Trades": 68.83333333333334,
+      "Exposure": 0.8878248974008208,
+      "Total Return": 0.8014820137791683
+    },
+    "best_regime": "bull",
+    "worst_regime": "sideways",
+    "sensitivity": [
+      {
+        "max_vol_rank": 0.4,
+        "CAGR": 0.4159174826715788,
+        "Sharpe": 0.9700523576885148,
+        "Max Drawdown": -0.348724831447918,
+        "Trades": 58.58333333333333
+      },
+      {
+        "max_vol_rank": 0.5,
+        "CAGR": 0.41178828454017014,
+        "Sharpe": 0.9528825622405489,
+        "Max Drawdown": -0.3882833486982705,
+        "Trades": 66.86666666666667
+      },
+      {
+        "max_vol_rank": 0.6,
+        "CAGR": 0.3419228266446581,
+        "Sharpe": 0.8426782202489387,
+        "Max Drawdown": -0.38562956432961604,
+        "Trades": 68.83333333333334
+      },
+      {
+        "max_vol_rank": 0.7,
+        "CAGR": 0.2194142846115441,
+        "Sharpe": 0.6445546749152529,
+        "Max Drawdown": -0.3747054490548173,
+        "Trades": 75.3642857142857
+      },
+      {
+        "max_vol_rank": 0.8,
+        "CAGR": 0.028382371155669883,
+        "Sharpe": 0.31717700904644996,
+        "Max Drawdown": -0.5168905811310047,
+        "Trades": 72.03214285714286
+      }
+    ]
+  },
+  {
+    "name": "Persistent low volatility 150/25",
+    "category": "Volatility Regimes",
+    "hypothesis": "Crypto assets that remain low volatility over a longer window may avoid distress risk while still carrying broad market beta.",
+    "why_persist": "Persistent calm tends to reflect deeper liquidity, lower adverse selection, and more institutionally acceptable risk.",
+    "participants": "Long-only allocators, volatility-aware funds, and levered traders avoiding unstable collateral.",
+    "stronger_when": "Broad recovery phases, sideways markets, and environments where crash risk is being repriced slowly.",
+    "weaker_when": "Speculative melt-ups led by high-beta laggards or sudden rotations into distressed assets.",
+    "rules": "Entry: 150-day realized volatility in bottom 25% of liquid universe. Exit: leaves bottom 25%. Equal-weight selected assets.",
+    "test_metrics": {
+      "strategy": "Persistent low volatility 150/25",
+      "category": "Volatility Regimes",
+      "split": "test_2024_2025",
+      "CAGR": 0.9040120763501203,
+      "Sharpe": 1.4018471298946031,
+      "Sortino": 2.8840098347759695,
+      "Max Drawdown": -0.2682561469794599,
+      "Profit Factor": 1.3093518353929716,
+      "Win Rate": 0.5362517099863201,
+      "Average Trade": 0.06786855281938768,
+      "Number of Trades": 11.5,
+      "Exposure": 1.0,
+      "Total Return": 2.6284592009722223
+    },
+    "best_regime": "bull",
+    "worst_regime": "sideways",
+    "sensitivity": [
+      {
+        "lookback": 60,
+        "CAGR": 0.18490090042380447,
+        "Sharpe": 0.6294293364090348,
+        "Max Drawdown": -0.3151839655119093,
+        "Trades": 20.0
+      },
+      {
+        "lookback": 90,
+        "CAGR": 0.6376939915380633,
+        "Sharpe": 1.133922405798524,
+        "Max Drawdown": -0.2757274056215402,
+        "Trades": 12.5
+      },
+      {
+        "lookback": 120,
+        "CAGR": 0.7359296861102538,
+        "Sharpe": 1.2362087544338372,
+        "Max Drawdown": -0.27572740562153997,
+        "Trades": 8.5
+      },
+      {
+        "lookback": 150,
+        "CAGR": 0.9040120763501203,
+        "Sharpe": 1.4018471298946031,
+        "Max Drawdown": -0.2682561469794599,
+        "Trades": 11.5
+      }
+    ]
+  },
+  {
+    "name": "TSMOM 60 + persistent low-vol gate",
+    "category": "Volatility Regimes",
+    "hypothesis": "Shorter momentum works better when restricted to assets whose recent volatility is not already distressed.",
+    "why_persist": "The volatility gate filters liquidation rebounds and noisy microstructure while retaining assets with timely positive drift.",
+    "participants": "Momentum traders, volatility-controlled allocators, and liquidity providers rotating into orderly leaders.",
+    "stronger_when": "Orderly uptrends with moderate realized volatility and broad participation.",
+    "weaker_when": "Early bull reversals led by the highest-beta assets.",
+    "rules": "Entry: 60-day return > 0 and 45-day realized-vol rank <= 40%. Exit: either condition fails.",
+    "test_metrics": {
+      "strategy": "TSMOM 60 + persistent low-vol gate",
+      "category": "Volatility Regimes",
+      "split": "test_2024_2025",
+      "CAGR": 0.5924848266596197,
+      "Sharpe": 1.259314943217559,
+      "Sortino": 1.7893318743047133,
+      "Max Drawdown": -0.32199020507714804,
+      "Profit Factor": 1.25104965819179,
+      "Win Rate": 0.43502051983584133,
+      "Average Trade": 0.008028931489023049,
+      "Number of Trades": 70.08333333333333,
+      "Exposure": 0.7961696306429549,
+      "Total Return": 1.5376237604575018
+    },
+    "best_regime": "bull",
+    "worst_regime": "sideways",
+    "sensitivity": [
+      {
+        "max_vol_rank": 0.3,
+        "CAGR": 0.35850197861734845,
+        "Sharpe": 0.8876155338632671,
+        "Max Drawdown": -0.316549893719021,
+        "Trades": 62.83333333333333
+      },
+      {
+        "max_vol_rank": 0.4,
+        "CAGR": 0.5924848266596197,
+        "Sharpe": 1.259314943217559,
+        "Max Drawdown": -0.32199020507714804,
+        "Trades": 70.08333333333333
+      },
+      {
+        "max_vol_rank": 0.5,
+        "CAGR": 0.26713073651117525,
+        "Sharpe": 0.7368308979047792,
+        "Max Drawdown": -0.36935483385599943,
+        "Trades": 74.36666666666667
+      },
+      {
+        "max_vol_rank": 0.6,
+        "CAGR": 0.27852753034261224,
+        "Sharpe": 0.7157506290640269,
+        "Max Drawdown": -0.4052118658107762,
+        "Trades": 79.98333333333333
+      }
+    ]
+  },
+  {
+    "name": "XSMOM 180 top 10%",
+    "category": "Cross-Sectional Momentum",
+    "hypothesis": "Longer-horizon crypto leaders may keep attracting capital after narratives become established.",
+    "why_persist": "A 180-day ranking favors persistent ecosystem leadership over short-lived listing or attention spikes.",
+    "participants": "Narrative traders, ecosystem funds, benchmark allocators, and relative-strength managers.",
+    "stronger_when": "Sustained sector leadership and broad crypto risk appetite.",
+    "weaker_when": "Fast leadership reversals, BTC dominance shocks, and market-wide deleveraging.",
+    "rules": "Entry: rank liquid assets by 180-day return and buy top 10%. Exit: falls out of top 10%. Equal-weight selected assets.",
+    "test_metrics": {
+      "strategy": "XSMOM 180 top 10%",
+      "category": "Cross-Sectional Momentum",
+      "split": "test_2024_2025",
+      "CAGR": 0.6338068238811634,
+      "Sharpe": 0.9817722252258168,
+      "Sortino": 1.6648477023222321,
+      "Max Drawdown": -0.5616671423279618,
+      "Profit Factor": 1.1604024673008877,
+      "Win Rate": 0.5034199726402189,
+      "Average Trade": 0.02243910510804835,
+      "Number of Trades": 40.0,
+      "Exposure": 1.0,
+      "Total Return": 1.6711191881397944
+    },
+    "best_regime": "bull",
+    "worst_regime": "bear",
+    "sensitivity": [
+      {
+        "top_quantile": 0.1,
+        "CAGR": 0.6338068238811634,
+        "Sharpe": 0.9817722252258168,
+        "Max Drawdown": -0.5616671423279618,
+        "Trades": 40.0
+      },
+      {
+        "top_quantile": 0.15,
+        "CAGR": 0.18523576533222963,
+        "Sharpe": 0.6102826456464816,
+        "Max Drawdown": -0.6119679308435335,
+        "Trades": 31.5
+      },
+      {
+        "top_quantile": 0.2,
+        "CAGR": 0.18523576533222963,
+        "Sharpe": 0.6102826456464816,
+        "Max Drawdown": -0.6119679308435335,
+        "Trades": 31.5
+      },
+      {
+        "top_quantile": 0.25,
+        "CAGR": 0.07046771945480557,
+        "Sharpe": 0.466097996955239,
+        "Max Drawdown": -0.5448266084810864,
+        "Trades": 34.666666666666664
+      }
+    ]
+  },
+  {
+    "name": "TSMOM 90 gated by BTC 200MA",
+    "category": "Market Regime Detection",
+    "hypothesis": "Long-only crypto momentum has a higher survival probability when BTC is in a broad uptrend.",
+    "why_persist": "BTC remains the dominant collateral and sentiment anchor; below its long-term trend, liquidity and risk appetite contract.",
+    "participants": "Long-only funds, miners/treasuries, retail beta buyers, and perps traders using BTC as risk proxy.",
+    "stronger_when": "BTC above long-term trend with positive breadth.",
+    "weaker_when": "Altcoin-specific rallies while BTC is below trend, or sudden trend reversals.",
+    "rules": "Entry: asset 90-day return > 0 and BTC close > BTC 200-day SMA. Exit: either condition fails.",
+    "test_metrics": {
+      "strategy": "TSMOM 90 gated by BTC 200MA",
+      "category": "Market Regime Detection",
+      "split": "test_2024_2025",
+      "CAGR": 0.010330394495764006,
+      "Sharpe": 0.2879827043998433,
+      "Sortino": 0.34626944140660715,
+      "Max Drawdown": -0.5842150593016878,
+      "Profit Factor": 1.0491851822154614,
+      "Win Rate": 0.3761969904240766,
+      "Average Trade": 0.0028137935576061928,
+      "Number of Trades": 54.62023809523809,
+      "Exposure": 0.7482900136798906,
+      "Total Return": 0.020781867315615488
+    },
+    "best_regime": "bull",
+    "worst_regime": "bear",
+    "sensitivity": [
+      {
+        "btc_ma": 100,
+        "CAGR": 0.14694844412248376,
+        "Sharpe": 0.5264241284534946,
+        "Max Drawdown": -0.4276911148865168,
+        "Trades": 52.66825396825397
+      },
+      {
+        "btc_ma": 150,
+        "CAGR": 0.22259245996234567,
+        "Sharpe": 0.6515167401036289,
+        "Max Drawdown": -0.49189395501479904,
+        "Trades": 50.7297619047619
+      },
+      {
+        "btc_ma": 200,
+        "CAGR": 0.010330394495764006,
+        "Sharpe": 0.2879827043998433,
+        "Max Drawdown": -0.5842150593016878,
+        "Trades": 54.62023809523809
+      },
+      {
+        "btc_ma": 250,
+        "CAGR": -0.035925994401972416,
+        "Sharpe": 0.2104853436237531,
+        "Max Drawdown": -0.581627432292353,
+        "Trades": 64.775
+      },
+      {
+        "btc_ma": 300,
+        "CAGR": -0.02207348042800128,
+        "Sharpe": 0.23893097385830137,
+        "Max Drawdown": -0.5990530151244046,
+        "Trades": 65.07261904761904
+      }
+    ]
+  },
+  {
+    "name": "Alt relative strength top 10%",
+    "category": "Relative Strength",
+    "hypothesis": "Altcoins outperforming BTC can continue as leadership rotates into ecosystems with active narratives.",
+    "why_persist": "Capital often moves from BTC into stronger ecosystems after BTC establishes risk appetite.",
+    "participants": "Sector rotation traders, ecosystem funds, market makers, and retail narrative flows.",
+    "stronger_when": "Broad altcoin seasons and BTC-stable/rising markets.",
+    "weaker_when": "BTC dominance shocks and liquidity contractions.",
+    "rules": "Entry: rank non-BTC assets by 90-day return minus BTC 90-day return and buy top 10%. Exit: falls out of top 10%.",
+    "test_metrics": {
+      "strategy": "Alt relative strength top 10%",
+      "category": "Relative Strength",
+      "split": "test_2024_2025",
+      "CAGR": 0.16287861316074026,
+      "Sharpe": 0.5912599538874056,
+      "Sortino": 0.9976332388270134,
+      "Max Drawdown": -0.6301591896824649,
+      "Profit Factor": 1.0916096753724087,
+      "Win Rate": 0.49247606019151846,
+      "Average Trade": 0.00671661854170386,
+      "Number of Trades": 74.0,
+      "Exposure": 1.0,
+      "Total Return": 0.35256603800828
+    },
+    "best_regime": "bull",
+    "worst_regime": "sideways",
+    "sensitivity": [
+      {
+        "top_quantile": 0.05,
+        "CAGR": 0.16287861316074026,
+        "Sharpe": 0.5912599538874056,
+        "Max Drawdown": -0.6301591896824649,
+        "Trades": 74.0
+      },
+      {
+        "top_quantile": 0.1,
+        "CAGR": 0.16287861316074026,
+        "Sharpe": 0.5912599538874056,
+        "Max Drawdown": -0.6301591896824649,
+        "Trades": 74.0
+      },
+      {
+        "top_quantile": 0.2,
+        "CAGR": 0.3218779728448531,
+        "Sharpe": 0.7408864489841229,
+        "Max Drawdown": -0.6205618676710201,
+        "Trades": 59.0
+      }
+    ]
+  }
+]
